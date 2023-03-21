@@ -658,6 +658,10 @@ the website, in dark theme
   font-weight: var(--font-medium);
 }
 
+.link__color {
+  color: var(--title-color);
+}
+
 .contact__icon {
   font-size: 1.25rem;
 }
@@ -1046,17 +1050,18 @@ the website, in dark theme
 @media screen and (min-width: 1200px) {
   .home__social {
     right: -3rem;
-    row-gap: 4.5rem;
+    row-gap: 3.5rem;
   }
   .home__social-follow {
-    font-size: var(--small-font-size);
+    font-size: 1.25rem;
+    margin-bottom: 50px;
   }
   .home__social-follow::after {
     width: 1.5rem;
     right: -60%;
   }
   .home__social-link {
-    font-size: 1.15rem;
+    font-size: 1.5rem;
   }
 
   .about__container {
@@ -1065,5 +1070,12 @@ the website, in dark theme
 
   .scrollup {
     right: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button--flex {
+    margin-bottom: -20px;
+    margin: 20px;
   }
 }
